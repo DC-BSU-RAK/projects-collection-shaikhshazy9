@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="🎯 Focus Flow"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A2E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your personal focus companion"
+            android:textSize="15sp"
+            android:textColor="#6B7280" />
+
+        <!-- Divider card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back! 👋"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A2E"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Focus Flow helps you build a study routine that matches your energy, mood and available time. Set your preferences once — and get smarter suggestions every session."
+                android:textSize="14sp"
+                android:textColor="#4B5563"
+                android:lineSpacingMultiplier="1.5" />
+
+        </LinearLayout>
+
+        <!-- Plan Routine Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoToRoutine"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="📋  Plan My Routine"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3B82F6"
+            app:cornerRadius="14dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <!-- Preferences Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoToPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:text="⚙️  My Preferences"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3B82F6"
+            android:backgroundTint="#DBEAFE"
+            app:cornerRadius="14dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <!-- How it Works Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHowItWorks"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="How it works"
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:backgroundTint="#E5E7EB"
+            app:cornerRadius="14dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Focus Flow • Built for achievers"
+            android:textSize="12sp"
+            android:textColor="#9CA3AF" />
+
+    </LinearLayout>
+</ScrollView>
