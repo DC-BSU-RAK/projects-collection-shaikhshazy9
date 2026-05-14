@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="✨ Vibe Decoder"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#3A0CA3"
+            android:letterSpacing="0.03" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="36dp"
+            android:text="Decode what the universe is telling you"
+            android:textSize="14sp"
+            android:textColor="#7B6FA6"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌊  Select Your Vibe"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#3A0CA3"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerVibe"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🕐  Select Your Context"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#3A0CA3"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerContext"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_marginBottom="36dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDecode"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Decode My Vibe"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3A0CA3"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHowItWorks"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="How it works"
+            android:textSize="14sp"
+            android:textColor="#3A0CA3"
+            android:backgroundTint="#E8E0FF"
+            android:layout_marginBottom="32dp"
+            app:cornerRadius="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <LinearLayout
+            android:id="@+id/resultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/result_card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="32dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Vibe Reading"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#7B6FA6"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#1A1A2E"
+                android:lineSpacingMultiplier="1.5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
